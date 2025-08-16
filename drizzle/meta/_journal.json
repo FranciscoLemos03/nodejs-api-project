@@ -15,6 +15,27 @@
       "when": 1755258737787,
       "tag": "0001_petite_forge",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755349101225,
+      "tag": "0002_cynical_roland_deschain",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755350576125,
+      "tag": "0003_dry_boom_boom",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1755351358638,
+      "tag": "0004_ancient_albert_cleary",
+      "breakpoints": true
     }
   ]
 }

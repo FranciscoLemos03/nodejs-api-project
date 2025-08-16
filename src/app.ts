@@ -3,9 +3,9 @@ import scalarAPIReference from '@scalar/fastify-api-reference' // doc ui
 import fastify from 'fastify' // create the server
 import { validatorCompiler, serializerCompiler, type ZodTypeProvider, jsonSchemaTransform } from 'fastify-type-provider-zod'// For validations
 // Routes
-import { createCourseRoute } from './src/routes/create-course.ts'
-import { getCoursesByIdRoute } from './src/routes/get-courses-by-id.ts'
-import { getCoursesRoute } from './src/routes/get-courses.ts'
+import { createCourseRoute } from './routes/create-course.ts'
+import { getCoursesByIdRoute } from './routes/get-courses-by-id.ts'
+import { getCoursesRoute } from './routes/get-courses.ts'
 
 const server = fastify({
     logger: {
@@ -45,6 +45,4 @@ server.register(createCourseRoute)
 server.register(getCoursesByIdRoute)
 server.register(getCoursesRoute)
 
-server.listen({port: 3333}).then(() => {
-    console.log("HTTP server running")
-})
+export { server }
