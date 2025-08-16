@@ -89,7 +89,9 @@ The server will run on `http://localhost:3333`.
 ## Testing Endpoints
 See `requisitions.http` for example requests.
 
-## Application Flow (Mermaid Diagram)
+## Application Flow
+
+Below is a Mermaid diagram showing the most important flow of the application:
 
 ```mermaid
 flowchart TD
@@ -98,20 +100,17 @@ flowchart TD
     B -->|GET /courses| D[Get All Courses]
     B -->|GET /courses/:id| E[Get Course by ID]
     C --> F[Validate Input]
-    D --> G[Fetch Courses]
-    E --> H[Fetch Course by ID]
-    F --> I[Insert into DB]
-    G --> J[Return Courses]
-    H --> K{Course Exists?}
-    I --> L[Return Course ID]
-    K -->|Yes| M[Return Course]
-    K -->|No| N[404 Not Found]
+    F --> G[Insert into DB]
+    G --> H[Return Course ID]
+    D --> I[Fetch Courses]
+    I --> J[Return Courses]
+    E --> K[Fetch Course by ID]
+    K --> L{Course Exists?}
+    L -->|Yes| M[Return Course]
+    L -->|No| N[404 Not Found]
 ```
 
-This diagram illustrates the main flow:
+**Diagram explanation:**
 - The client sends requests to the API endpoints.
 - Each endpoint validates input and interacts with the database.
 - Responses are returned based on the result of the database operations.
-
-## License
-MIT
