@@ -1,4 +1,5 @@
 services:
+  # iniciate db for api 
   db: 
     image: postgres:17
     environment:
@@ -7,3 +8,6 @@ services:
       POSTGRES_DB: desafio
     ports:
       - "5432:5432"
+    volumes:
+      # iniciate volume for db for tests
+      - ./docker/setup.sql:/docker-entrypoint-initdb.d/init.sql
