@@ -17,7 +17,7 @@ A RESTful API built with Fastify, TypeScript, Drizzle ORM, and PostgreSQL. This 
 
 ### 1. Clone the repository
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/FranciscoLemos03/nodejs-api-project.git
 cd nodejs-api-project
 ```
 
