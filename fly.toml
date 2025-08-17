@@ -23,4 +23,8 @@ primary_region = 'cdg'
   memory_mb = 1024
 
 [deploy]
+<<<<<<< Updated upstream
   release_command = "npm run db:migrate"
+=======
+  release_command = "npm run db:migrate"
+>>>>>>> Stashed changes
