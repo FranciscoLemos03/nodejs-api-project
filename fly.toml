@@ -24,7 +24,11 @@ primary_region = 'cdg'
 
 [deploy]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   release_command = "npm run db:migrate"
+=======
+  release_command = "npm run db:migrate"
+>>>>>>> Stashed changes
 =======
   release_command = "npm run db:migrate"
 >>>>>>> Stashed changes
