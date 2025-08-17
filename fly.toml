@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for nodejs-api-project on 2025-08-17T15:02:57Z
+# fly.toml app configuration file generated for nodejs-api-project on 2025-08-17T15:19:41Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -23,12 +23,4 @@ primary_region = 'cdg'
   memory_mb = 1024
 
 [deploy]
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   release_command = "npm run db:migrate"
-=======
-  release_command = "npm run db:migrate"
->>>>>>> Stashed changes
-=======
-  release_command = "npm run db:migrate"
->>>>>>> Stashed changes
