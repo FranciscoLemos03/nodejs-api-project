@@ -1,12 +1,22 @@
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Nzk3ZTk1OS0yNzU3LTQ1N2ItOTA0My0wNzQ4NmY2ZTdkYmUiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NTQzODk2OH0.QSyGFvuJ0P6IzdPGuzKS_mogru46qY9QV2ZumS9g4zo
 
 {
-    "title": "Curso de c++"
+    "title": "Curso de c#"
 }
 ###
 
 GET http://localhost:3333/courses?orderBy=title
 ###
 
-GET http://localhost:3333/courses/bd895d75-ad51-4fb1-9a2d-67252f906f0b
+GET http://localhost:3333/courses/54e80e64-b4aa-4137-a08a-97e945a58e71
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Nzk3ZTk1OS0yNzU3LTQ1N2ItOTA0My0wNzQ4NmY2ZTdkYmUiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NTQzODk2OH0.QSyGFvuJ0P6IzdPGuzKS_mogru46qY9QV2ZumS9g4zo
+###
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+    "email": "Caetana.Nunes36@aeiou.pt",
+    "password": "123456"
+}
