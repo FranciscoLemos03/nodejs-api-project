@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . ./
 
 # Install every dependency in package-lock
-RUN npm ci --only=production
+RUN npm ci
 
 EXPOSE 3333
 
